@@ -1,2 +1,4 @@
 node_modules/
 files_to_keep/
+config/production.json
+config/default.json
