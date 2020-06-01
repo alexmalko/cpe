@@ -566,3 +566,22 @@ button {
 		padding: 0.3rem 0.4rem;
 	}
 }
+
+/* test CSS */
+.tweet {
+	height: 300px;
+	width: 300px;
+	background: rgb(61, 182, 223);
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.app {
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
