@@ -2,3 +2,5 @@ node_modules/
 
 #Delete before pushing to Heroku
 
+config/production.json
+config/default.json
