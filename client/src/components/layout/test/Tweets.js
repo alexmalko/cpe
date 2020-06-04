@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import api from '../../../utils/api'; //test passport.JS auth flow
 
 function Tweet({ name, message }) {
 	const [ fruit, setFruit ] = useState({ text: 'Learn Hooks' });
