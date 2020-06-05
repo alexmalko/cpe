@@ -1,5 +1,4 @@
 {
 	"mongoURI": "mongodb+srv://2740624:2740624@cluster0-tnoni.mongodb.net/test?retryWrites=true&w=majority",
-	"jwtSecret": "mysecrettoken",
-	"key": "udRWuYQBsxmi3uyWTrrysdlD"
+	"jwtSecret": "mysecrettoken"
 }

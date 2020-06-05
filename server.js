@@ -1,12 +1,13 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const path = require('path');
-const key = require('./config/keys'); //bringing config file
 
-//demo flow for passport JS
+// part of GAuthFlow with Passport
+const cookieSession = require('cookie-session');
 const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-//demo flow for passport JS
+const keys = require('./config/TEST_keys');
+require('./models/TEST_googleAuthDemo'); //just require because we dont return anything
+require('./services/TEST_passport'); //just require because we dont return anything
 
 const app = express();
 
@@ -33,27 +34,17 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // beggining of demo for passport JS
-passport.use(
-	new GoogleStrategy(
-		{
-			clientID: key.googleClientID,
-			clientSecret: key.googleClientSecret,
-			callbackURL: '/auth/google/callback',
-			scope: 'email'
-		},
-		(accessToken, refreshToken, profile, done) => {
-			console.log('accessToken', accessToken);
-			console.log('refreshToken', refreshToken);
-			console.log('profile', profile);
-		}
-	)
+// thandling cookies with for passport
+// app.use is the middleware call
+app.use(
+	cookieSession({
+		maxAge: 30 * 24 * 60 * 60 * 1000,
+		keys: [ keys.cookieKey ]
+	})
 );
-
-app.get('/auth/google', passport.authenticate('google'));
-
-app.get('/auth/google/callback', passport.authenticate('google'));
-
-// beggining of demo for passport JS
+app.use(passport.initialize());
+app.use(passport.session());
+require('./routes/TEST_authPassport')(app); //requiting and calling route at the same time
 
 // web scraping tutorial
 app.get('/web/scraping', (reg, res) => {

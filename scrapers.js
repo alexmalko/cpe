@@ -7,11 +7,9 @@ async function scrapeChannel(url) {
 	const page = await browser.newPage();
 	await page.goto(url);
 
-	const [ el ] = await page.$x(
-		'/html/body/div[1]/div/div[2]/div/div/div/div/div/div[6]/div/div[3]/div/div[2]/div/div[8]/div[2]/div[1]/h3/a'
-	);
+	const [ el ] = await page.$x('//*[@id="footer"]/div/div/div/div[1]/div/div/div/div[1]/div/img');
 	console.log(el);
-	const text = await el.getProperty('p a');
+	const text = await el.getProperty('src');
 	const name = await text.jsonValue();
 
 	console.log(name);
