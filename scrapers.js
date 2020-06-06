@@ -22,5 +22,3 @@ scrapeChannel('https://www.ey.com/en_gl/webcasts');
 // https://www.youtube.com/watch?v=ALizgnSFTwQ || Intro To Web Crawlers & Scraping With Scrapy
 // https://www.youtube.com/watch?v=LoziivfAAjE&t=884s || Intro To Web Scraping With Node.js & Cheerio
 // test #1
-// izmeneniay
-// test #3
