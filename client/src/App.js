@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Routes from './components/routing/Routes';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
@@ -18,7 +18,7 @@ export default function App() {
 
 	return (
 		<Provider store={store}>
-			<Router>
+			<BrowserRouter>
 				<Fragment>
 					<Navbar />
 					<Switch>
@@ -26,7 +26,7 @@ export default function App() {
 						<Route component={Routes} />
 					</Switch>
 				</Fragment>
-			</Router>
+			</BrowserRouter>
 		</Provider>
 	);
 }

@@ -10,6 +10,8 @@ function Tweet({ name, message }) {
 			<p>{message}</p>
 			<h3>Number of like</h3>
 			<h3>{fruit.text}</h3>
+			<a href="/auth/google">Google Sing In</a>
+			<a href="http://localhost:5000/auth/facebook">Facebook Sing In</a>
 		</div>
 	);
 }
