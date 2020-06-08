@@ -18,7 +18,7 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		fetchUser();
+		store.dispatch(fetchUser());
 	});
 
 	return (
