@@ -17,10 +17,6 @@ function App() {
 		store.dispatch(loadUser());
 	}, []);
 
-	useEffect(() => {
-		store.dispatch(fetchUser());
-	});
-
 	return (
 		<BrowserRouter>
 			<Fragment>

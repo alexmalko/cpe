@@ -44,9 +44,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 				<a href="/auth/google">Login with Google</a>
 			</li>
 			<li>
-				<a href="/auth/facebook">Login with Facebook</a>
-			</li>
-			<li>
 				<a href="/api/logout">Logout</a>
 			</li>
 			<li>

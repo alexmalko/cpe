@@ -1,15 +1,36 @@
-import React, { useState } from 'react';
-import Tweet from './Tweets';
+import React, { Component } from 'react';
+import Props from './Props';
 
-function App() {
-	const [ users ] = useState([
-		{ name: 'Lilia', message: 'Hello there' },
-		{ name: 'Alex', message: 'I am a tennis playes' },
-		{ name: 'Alina', message: 'Awesome' },
-		{ name: 'Alex', message: 'Dudes' }
-	]);
-
-	return <div className="app">{users.map((user) => <Tweet name={user.name} message={user.message} />)}</div>;
+function getNum() {
+	return Math.floor(Math.random() * 10) + 1;
 }
 
-export default App;
+const name = {
+	first: 'alex',
+	last: 'malko',
+	born: {
+		year: '1990',
+		month: 'dec'
+	}
+};
+
+export default class Test extends Component {
+	render() {
+		return (
+			<div>
+				<Props hobby={[ 'soccer', 'tennis', 'swimming' ]} />
+				<Props hobby={[ 'eat', 'rave', 'sleep' ]} />
+			</div>
+		);
+	}
+}
+
+// import React from 'react';
+
+// export default function Test() {
+// 	return (
+// 		<div>
+// 			<p>Hello</p>
+// 		</div>
+// 	);
+// }
