@@ -1,25 +1,15 @@
 import React, { Component } from 'react';
-import Props from './Props';
+import Pokedex from './Pokedex';
 
 function getNum() {
 	return Math.floor(Math.random() * 10) + 1;
 }
 
-const name = {
-	first: 'alex',
-	last: 'malko',
-	born: {
-		year: '1990',
-		month: 'dec'
-	}
-};
-
 export default class Test extends Component {
 	render() {
 		return (
 			<div>
-				<Props hobby={[ 'soccer', 'tennis', 'swimming' ]} />
-				<Props hobby={[ 'eat', 'rave', 'sleep' ]} />
+				<Pokedex />
 			</div>
 		);
 	}

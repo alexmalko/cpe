@@ -12,9 +12,9 @@ import Profile from '../profile/Profile';
 import Posts from '../posts/Posts';
 import Post from '../post/Post';
 import NotFound from '../layout/NotFound';
-import Test from '../layout/test/Test';
+import Test from '../layout/test/Pokemon_Prop_Exer/Pokemon';
 import PrivateRoute from '../routing/PrivateRoute';
-import TEST_Billing from '../layout/test/TEST_Billing';
+import TEST_Billing from '../layout/test/Billing/TEST_Billing';
 
 const Routes = (props) => {
 	return (
