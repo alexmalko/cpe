@@ -15,7 +15,7 @@ import NotFound from '../layout/NotFound';
 import Test from '../layout/test/Pokemon_Prop_Exer/Pokemon';
 import PrivateRoute from '../routing/PrivateRoute';
 import TEST_Billing from '../layout/test/Billing/TEST_Billing';
-import State from '../layout/test/State/State';
+import RollDice from '../layout/test/Die _Roll/RollDice';
 
 const Routes = (props) => {
 	return (
@@ -28,7 +28,7 @@ const Routes = (props) => {
 				<Route exact path="/profile/:id" component={Profile} />
 				<Route exact path="/test" component={Test} />
 				<Route exact path="/billing" component={TEST_Billing} />
-				<Route exact path="/state" component={State} />
+				<Route exact path="/dice" component={RollDice} />
 				<PrivateRoute exact path="/dashboard" component={Dashboard} />
 				<PrivateRoute exact path="/create-profile" component={ProfileForm} />
 				<PrivateRoute exact path="/edit-profile" component={ProfileForm} />

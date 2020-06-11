@@ -38,10 +38,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 				<Link to="/login">Login</Link>
 			</li>
 			<li>
-				<Link to="/test">Test</Link>
+				<Link to="/test">Pokemon</Link>
 			</li>
 			<li>
-				<a href="/state">State</a>
+				<a href="/dice">Dice</a>
 			</li>
 			<li>
 				<a href="/auth/google">Login with Google</a>
