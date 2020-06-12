@@ -675,3 +675,39 @@ button {
 		transform: translateX(0%);
 	}
 }
+
+/* Coin Flipper */
+
+.CoinContainer {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.Coin img {
+	width: 200px;
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	animation-duration: 1s;
+}
+
+.CoinAndDice {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+/* Color-boxes */
+
+.Box {
+	height: 10em;
+	width: 10em;
+}
+
+.BoxContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	flex: 1;
+}

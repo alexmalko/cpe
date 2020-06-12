@@ -16,6 +16,8 @@ import Test from '../layout/test/Pokemon_Prop_Exer/Pokemon';
 import PrivateRoute from '../routing/PrivateRoute';
 import TEST_Billing from '../layout/test/Billing/TEST_Billing';
 import RollDice from '../layout/test/Die _Roll/RollDice';
+import CointContainer from '../layout/test/coin_flip/CointContainer';
+import ColorBoxes from '../layout/test/Color_boxes/ColorBoxes';
 
 const Routes = (props) => {
 	return (
@@ -29,6 +31,8 @@ const Routes = (props) => {
 				<Route exact path="/test" component={Test} />
 				<Route exact path="/billing" component={TEST_Billing} />
 				<Route exact path="/dice" component={RollDice} />
+				<Route exact path="/coins" component={CointContainer} />
+				<Route exact path="/color-boxes" component={ColorBoxes} />
 				<PrivateRoute exact path="/dashboard" component={Dashboard} />
 				<PrivateRoute exact path="/create-profile" component={ProfileForm} />
 				<PrivateRoute exact path="/edit-profile" component={ProfileForm} />

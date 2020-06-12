@@ -29,6 +29,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const guestLinks = (
 		<ul>
 			<li>
+				<Link to="/color-boxes">Color Boxes</Link>
+			</li>
+			<li>
 				<Link to="/profiles">Developers</Link>
 			</li>
 			<li>
@@ -51,6 +54,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 			</li>
 			<li>
 				<a href="/billing">Billing</a>
+			</li>
+			<li>
+				<a href="/coins">Coins</a>
 			</li>
 		</ul>
 	);
