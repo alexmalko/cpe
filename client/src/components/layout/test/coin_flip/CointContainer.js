@@ -11,7 +11,7 @@ export default function CointContainer() {
 			{
 				side: 'tails',
 				imgSrc:
-					'http://www.pcgscoinfacts.com/UserImages/71009269r.jpg?__cf_chl_jschl_tk__=b943802e3516db9a3dded863406b6e99f2c6dd1f-1591983040-0-AVX-etopIPwB3OPBSbDihZpk3MGxWSQtu6wgQ6LqDCgcqAMXxy_FiiVL_s4oQ0ml8qZUhkht2neRiyVd1mq8_M-_m0MYFnjZvM--fB3PaCfkZ6-TVhxB-y56Rg57_xQtqfarXPtv5fR1ejW1Tx3lMEeGDGFfD23mHFohhX2pwTy6148-xmwxAEjRsYCeGXxEjX604ChmnfTwRNdBOVPpKxqCI6Q3bXEoqSbHN5wzrGG-TPQ7QTHjcZzF8RKJ-_YULGYsjl7PDV0dc2GpqvvO0H9q9I2ciazhRZtRt0Ms5VrBbI4z9Ds9l6nDRZygs7nLBA'
+					'http://www.pcgscoinfacts.com/UserImages/71009269r.jpg?__cf_chl_jschl_tk__=30210f1877e8767f8b50e8dfb382d0b7dcbb9618-1592021830-0-Adg2Hc2_oJOxI0vwMuAkwd5q3O2VV0nbB4nXvRgRh9ev22URoPX5sRTRbyKtDWPVPvEnqMGl4dN5BlX1XMpir23AX-CTT_YIY2KUWVLN4wcFrEzMOwcwMbtUqbgUpQCb1aOvBbBVQNexs-_R-gKnBz4oJMAGNH_P_PTtQrh3KZqqX1Xu9PXFZuxgkd4QOjgHzQs2ujJRxFf-QMNBzkDMX6PkEc7Lnw6pfBSsWk333lP9Mwy3wmk4X_03m7NTCDsxJenIhO_DUirikHWXxGlBb4B5ISdTimlQQUjvZHTPBhVhpgft7JkOCpDrY1uAlU4_PA'
 			}
 		]
 	};
@@ -27,7 +27,6 @@ export default function CointContainer() {
 	const flipCoin = () => {
 		const newCoin = data.coins[Math.floor(Math.random() * data.coins.length)];
 		setCoin((st) => {
-			console.log(st);
 			return {
 				currCoin: newCoin,
 				nFlips: st.nFlips + 1,

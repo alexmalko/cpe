@@ -18,6 +18,7 @@ import TEST_Billing from '../layout/test/Billing/TEST_Billing';
 import RollDice from '../layout/test/Die _Roll/RollDice';
 import CointContainer from '../layout/test/coin_flip/CointContainer';
 import ColorBoxes from '../layout/test/Color_boxes/ColorBoxes';
+import Forms from '../layout/test/Forms/Root';
 
 const Routes = (props) => {
 	return (
@@ -33,6 +34,7 @@ const Routes = (props) => {
 				<Route exact path="/dice" component={RollDice} />
 				<Route exact path="/coins" component={CointContainer} />
 				<Route exact path="/color-boxes" component={ColorBoxes} />
+				<Route exact path="/forms" component={Forms} />
 				<PrivateRoute exact path="/dashboard" component={Dashboard} />
 				<PrivateRoute exact path="/create-profile" component={ProfileForm} />
 				<PrivateRoute exact path="/edit-profile" component={ProfileForm} />
