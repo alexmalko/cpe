@@ -1,10 +1,10 @@
 import React from 'react';
-import BoxList from './BoxList';
+import TodoList from './TodoList';
 
 export default function Forms() {
 	return (
 		<div>
-			<BoxList />
+			<TodoList />
 		</div>
 	);
 }

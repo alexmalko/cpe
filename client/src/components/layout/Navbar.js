@@ -29,6 +29,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const guestLinks = (
 		<ul>
 			<li>
+				<Link to="/todo">Todo</Link>
+			</li>
+			<li>
 				<Link to="/forms">Form</Link>
 			</li>
 			<li>
