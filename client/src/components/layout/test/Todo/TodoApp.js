@@ -9,12 +9,20 @@ import TodoForm from './TodoForm';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function TodoApp() {
-	const initialTodo = [
-		{ id: 1, task: 'grown beard', completed: false },
-		{ id: 2, task: 'jello', completed: true },
-		{ id: 3, task: 'grown a pair of cohones', completed: false }
-	];
+	const initialTodo = JSON.parse(window.localStorage.getItem('todos') || '[]');
+	// const initialTodo = [
+	// 	{ id: 1, task: 'grown beard', completed: false },
+	// 	{ id: 2, task: 'jello', completed: true },
+	// 	{ id: 3, task: 'grown a pair of cohones', completed: false }
+	// ];
 	const [ todos, setTodos ] = useState(initialTodo);
+
+	useEffect(
+		() => {
+			window.localStorage.setItem('todos', JSON.stringify(todos));
+		},
+		[ todos ]
+	);
 
 	const addTodo = (newTodoText) => {
 		setTodos([ ...todos, { id: uuidv4(), task: newTodoText, completed: false } ]);

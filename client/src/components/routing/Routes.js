@@ -20,6 +20,7 @@ import CointContainer from '../layout/test/coin_flip/CointContainer';
 import ColorBoxes from '../layout/test/Color_boxes/ColorBoxes';
 import Forms from '../layout/test/Forms/Root';
 import Todo from '../layout/test/Todo/Root';
+import Scraper from '../layout/test/scraper/Root';
 
 const Routes = (props) => {
 	return (
@@ -37,6 +38,7 @@ const Routes = (props) => {
 				<Route exact path="/color-boxes" component={ColorBoxes} />
 				<Route exact path="/forms" component={Forms} />
 				<Route exact path="/todo" component={Todo} />
+				<Route exact path="/scraper" component={Scraper} />
 				<PrivateRoute exact path="/dashboard" component={Dashboard} />
 				<PrivateRoute exact path="/create-profile" component={ProfileForm} />
 				<PrivateRoute exact path="/edit-profile" component={ProfileForm} />
